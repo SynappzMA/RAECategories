@@ -7,6 +7,7 @@
 //
 
 #import "RAEViewController.h"
+#import "RAECategories.h"
 
 @interface RAEViewController ()
 
@@ -24,6 +25,13 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(IBAction)doIt:(id)sender
+{
+    [self showChangedSavedOverlay:^() {
+        NSLog(@"Hi, I completed");
+    }withMessage:@"Changes saved!" color:[UIColor blueColor]];
 }
 
 @end

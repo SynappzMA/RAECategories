@@ -6,6 +6,5 @@ target 'RAECategories_Example' do
   target 'RAECategories_Tests' do
     inherit! :search_paths
 
-    
   end
 end

@@ -1,5 +1,7 @@
 PODS:
-  - RAECategories (0.1.0)
+  - BDGScreenshot (0.0.2)
+  - RAECategories (0.1.0):
+    - BDGScreenshot
 
 DEPENDENCIES:
   - RAECategories (from `../`)
@@ -9,8 +11,9 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  RAECategories: 69bfed80d693d9be0fa8317d08b685f478866fb3
+  BDGScreenshot: f493d124c9935132da9e0ca9e8f2e6be180f7dd5
+  RAECategories: ce10e6b920eaa48ff9e7030221402294c9db526d
 
-PODFILE CHECKSUM: cba3326410decbb740f7890e000b489f418dfb0a
+PODFILE CHECKSUM: 0e822165bcc37fc65a5bcdb04e23ab721ac9656d
 
 COCOAPODS: 1.1.1
