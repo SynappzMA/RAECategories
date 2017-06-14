@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'RAECategories_Example' do
+  pod 'RAECategories', :path => '../'
+
+  target 'RAECategories_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

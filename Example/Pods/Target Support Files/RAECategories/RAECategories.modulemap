@@ -1,0 +1,6 @@
+framework module RAECategories {
+  umbrella header "RAECategories-umbrella.h"
+
+  export *
+  module * { export * }
+}

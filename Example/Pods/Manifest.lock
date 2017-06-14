@@ -1,0 +1,16 @@
+PODS:
+  - RAECategories (0.1.0)
+
+DEPENDENCIES:
+  - RAECategories (from `../`)
+
+EXTERNAL SOURCES:
+  RAECategories:
+    :path: ../
+
+SPEC CHECKSUMS:
+  RAECategories: 69bfed80d693d9be0fa8317d08b685f478866fb3
+
+PODFILE CHECKSUM: cba3326410decbb740f7890e000b489f418dfb0a
+
+COCOAPODS: 1.1.1
