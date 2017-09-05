@@ -25,6 +25,8 @@
 		9712AF3F74A55B7E63245E5351A1ACFE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD3227D3B8B490017F0CB58528532D73 /* Foundation.framework */; };
 		9BE67D73E98D8CF8A411F93F01006FA0 /* SavedOverlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B69A0BC2A30B19B6A57ED245DF964620 /* SavedOverlayView.xib */; };
 		A74312E7990684D4FEA19EA5ADF935D0 /* SavedOverlayView.h in Headers */ = {isa = PBXBuildFile; fileRef = 167440539AA80B03EFBFF521EAC56F11 /* SavedOverlayView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B07011781F5EB47000784BDC /* UIView+SimpleAnimations.h in Headers */ = {isa = PBXBuildFile; fileRef = B07011761F5EB47000784BDC /* UIView+SimpleAnimations.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B07011791F5EB47000784BDC /* UIView+SimpleAnimations.m in Sources */ = {isa = PBXBuildFile; fileRef = B07011771F5EB47000784BDC /* UIView+SimpleAnimations.m */; };
 		B6E665EECB92F36688D2D1AB3910649A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD3227D3B8B490017F0CB58528532D73 /* Foundation.framework */; };
 		BB0C61A3ED7003FE6FD724EF44FC718E /* Pods-RAECategories_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F484459C4D542EC29DE7CD44E9A5C2C /* Pods-RAECategories_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BD64A33206D135FE65F150B95C37F9EC /* Quartzcore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCD1B9F89DDB932864CF8DD174626E1A /* Quartzcore.framework */; };
@@ -68,22 +70,22 @@
 
 /* Begin PBXFileReference section */
 		042487094B54298209C6B6A62971440D /* RAECategories.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RAECategories.h; sourceTree = "<group>"; };
-		0F594F80F1E941FF8ADBF85E580B8771 /* RAECategories.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RAECategories.framework; path = RAECategories.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F594F80F1E941FF8ADBF85E580B8771 /* RAECategories.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RAECategories.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		167440539AA80B03EFBFF521EAC56F11 /* SavedOverlayView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SavedOverlayView.h; sourceTree = "<group>"; };
 		19A4E43416212C063255188A90D070A8 /* Pods-RAECategories_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RAECategories_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		1A55FA1820E315CB4772615F98761AEE /* BDGScreenshot.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = BDGScreenshot.modulemap; sourceTree = "<group>"; };
+		1A55FA1820E315CB4772615F98761AEE /* BDGScreenshot.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = BDGScreenshot.modulemap; sourceTree = "<group>"; };
 		226F18FF13B731FA4DA3599E57B8CB78 /* BDGScreenshot.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BDGScreenshot.xcconfig; sourceTree = "<group>"; };
-		2BBD0B17EFA275AC830EDE9566FD66E5 /* RAECategories.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = RAECategories.modulemap; sourceTree = "<group>"; };
+		2BBD0B17EFA275AC830EDE9566FD66E5 /* RAECategories.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = RAECategories.modulemap; sourceTree = "<group>"; };
 		2E282B039525847FEB4DDB62F66F9984 /* RAECategories.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RAECategories.xcconfig; sourceTree = "<group>"; };
-		2FB7BAC9F47282F2583961FA0B0023AD /* Pods-RAECategories_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-RAECategories_Example.modulemap"; sourceTree = "<group>"; };
+		2FB7BAC9F47282F2583961FA0B0023AD /* Pods-RAECategories_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-RAECategories_Example.modulemap"; sourceTree = "<group>"; };
 		45102D91CEB7C19399298D6C99168BE5 /* RAECategories-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RAECategories-dummy.m"; sourceTree = "<group>"; };
 		48A4F0DE6F0F9A4210566D5AC5C84DEF /* NSBundle+PodResourceBundle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+PodResourceBundle.m"; sourceTree = "<group>"; };
 		4B098679950F55C04943BB71D707F6E4 /* BDGScreenshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BDGScreenshot.h; sourceTree = "<group>"; };
-		4DB67A5C9E813569F8178979F431DC5B /* Pods_RAECategories_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RAECategories_Tests.framework; path = "Pods-RAECategories_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DB67A5C9E813569F8178979F431DC5B /* Pods_RAECategories_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RAECategories_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		50057B3326EF62A55E2C360AE31266A3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56C96634264CEEB3D6A7A4922E4F8F26 /* ResourceBundle-RAECategories-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-RAECategories-Info.plist"; sourceTree = "<group>"; };
 		5B1FEC4969DCA127162901FE8112E9BF /* Pods-RAECategories_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RAECategories_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		612E85A35D35BD9F34340A22FDAF56DA /* RAECategories.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = RAECategories.bundle; path = RAECategories.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		612E85A35D35BD9F34340A22FDAF56DA /* RAECategories.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RAECategories.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		62E0EFA491240243D9285B9322849197 /* Pods-RAECategories_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RAECategories_Tests-resources.sh"; sourceTree = "<group>"; };
 		69AE291DAC26EFB39E029178DF560DC0 /* Pods-RAECategories_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RAECategories_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		69E425793A946973DA64C39C4F16693F /* UIViewController+SavedOverlay.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SavedOverlay.m"; sourceTree = "<group>"; };
@@ -93,22 +95,24 @@
 		73B3AB17BA60E33887264A3BFFCA5CD2 /* Pods-RAECategories_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RAECategories_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		744E7C433ABDB0FA1E90840FA7E64363 /* Pods-RAECategories_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RAECategories_Tests-dummy.m"; sourceTree = "<group>"; };
 		823D1E01B260D59F818CF8543B6689C5 /* Pods-RAECategories_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RAECategories_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		8D7AD8DCA6E817CEC4B01A90E854ECCC /* Pods_RAECategories_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RAECategories_Example.framework; path = "Pods-RAECategories_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D7AD8DCA6E817CEC4B01A90E854ECCC /* Pods_RAECategories_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RAECategories_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9366DC21C048B07A6B991A3F9042D044 /* Pods-RAECategories_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RAECategories_Example-frameworks.sh"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9A8D81153BE8868777EC80F158FDCD9F /* Pods-RAECategories_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-RAECategories_Tests.modulemap"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9A8D81153BE8868777EC80F158FDCD9F /* Pods-RAECategories_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-RAECategories_Tests.modulemap"; sourceTree = "<group>"; };
 		9B0249159FA109984B9C0DAD5DDDC049 /* BDGScreenshot-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BDGScreenshot-prefix.pch"; sourceTree = "<group>"; };
 		9CB715181EFDC87692AEE43CC4D621DD /* Pods-RAECategories_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RAECategories_Example-resources.sh"; sourceTree = "<group>"; };
 		A0B5325D80F2767DBD67321A857D63E8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A24E78F1437D6268B7353D9B993D93EA /* BDGScreenshot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BDGScreenshot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC96CCA6DFF02F26DAB296607DEEA34F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B07011761F5EB47000784BDC /* UIView+SimpleAnimations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SimpleAnimations.h"; sourceTree = "<group>"; };
+		B07011771F5EB47000784BDC /* UIView+SimpleAnimations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SimpleAnimations.m"; sourceTree = "<group>"; };
 		B2492135B69625EBBAA5F1F9F11C98E5 /* BDGScreenshot-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BDGScreenshot-dummy.m"; sourceTree = "<group>"; };
 		B69A0BC2A30B19B6A57ED245DF964620 /* SavedOverlayView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = SavedOverlayView.xib; sourceTree = "<group>"; };
 		BE2ABBA27D73ADFD5A7DD9E3CB265DF3 /* RAECategories-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RAECategories-prefix.pch"; sourceTree = "<group>"; };
 		BE411CE90EDA1290963947172592914C /* RAECategories-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RAECategories-umbrella.h"; sourceTree = "<group>"; };
 		BF3FEC6EF790AEEA141695ACC7376552 /* Pods-RAECategories_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RAECategories_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		C3A6635FDE403B22C7CCCFC00BB36C3D /* SavedOverlayView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SavedOverlayView.m; sourceTree = "<group>"; };
-		C60B770EE60FD26B12C180346CCF6592 /* BDGScreenshot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BDGScreenshot.framework; path = BDGScreenshot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C60B770EE60FD26B12C180346CCF6592 /* BDGScreenshot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BDGScreenshot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA33249F92BA56029CFCDC170C528314 /* BDGScreenshot-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BDGScreenshot-umbrella.h"; sourceTree = "<group>"; };
 		CE30BD781E871A8A594A4A83A1842C7D /* Pods-RAECategories_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RAECategories_Example-umbrella.h"; sourceTree = "<group>"; };
 		D91EA1D5C6572C82ED88CBABCAC91613 /* RAECategories.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = RAECategories.xcassets; sourceTree = "<group>"; };
@@ -194,7 +198,6 @@
 			children = (
 				82193EAA877B70E7133CB570B28974C2 /* Classes */,
 			);
-			name = RAECategories;
 			path = RAECategories;
 			sourceTree = "<group>";
 		};
@@ -235,7 +238,6 @@
 				6E8A0B6BF79DAC5A80BFF24063E2F208 /* BDGScreenshot.m */,
 				17C6C401291F68E0A898605FA4B9AE21 /* Support Files */,
 			);
-			name = BDGScreenshot;
 			path = BDGScreenshot;
 			sourceTree = "<group>";
 		};
@@ -259,10 +261,11 @@
 				042487094B54298209C6B6A62971440D /* RAECategories.h */,
 				167440539AA80B03EFBFF521EAC56F11 /* SavedOverlayView.h */,
 				C3A6635FDE403B22C7CCCFC00BB36C3D /* SavedOverlayView.m */,
+				B07011761F5EB47000784BDC /* UIView+SimpleAnimations.h */,
+				B07011771F5EB47000784BDC /* UIView+SimpleAnimations.m */,
 				DD802229E185767AE38D9B2A59779DF2 /* UIViewController+SavedOverlay.h */,
 				69E425793A946973DA64C39C4F16693F /* UIViewController+SavedOverlay.m */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -308,7 +311,6 @@
 			children = (
 				FDA2247A7FB985D489C9416161A81E5E /* Assets */,
 			);
-			name = RAECategories;
 			path = RAECategories;
 			sourceTree = "<group>";
 		};
@@ -358,7 +360,6 @@
 			children = (
 				B69A0BC2A30B19B6A57ED245DF964620 /* SavedOverlayView.xib */,
 			);
-			name = Interface;
 			path = Interface;
 			sourceTree = "<group>";
 		};
@@ -377,7 +378,6 @@
 				D91EA1D5C6572C82ED88CBABCAC91613 /* RAECategories.xcassets */,
 				ED4C80AA93063CC5A870522E7E060386 /* Interface */,
 			);
-			name = Assets;
 			path = Assets;
 			sourceTree = "<group>";
 		};
@@ -399,6 +399,7 @@
 			files = (
 				C97D3C3E2EACC4FCD49A3495073410C4 /* NSBundle+PodResourceBundle.h in Headers */,
 				7005846D5EAA408D9882C2B6AA500546 /* RAECategories-umbrella.h in Headers */,
+				B07011781F5EB47000784BDC /* UIView+SimpleAnimations.h in Headers */,
 				06C0EAB3CAF5E63FF3D226F76BCFD3F9 /* RAECategories.h in Headers */,
 				A74312E7990684D4FEA19EA5ADF935D0 /* SavedOverlayView.h in Headers */,
 				DFBB45F66207E823ECB0284781C807E2 /* UIViewController+SavedOverlay.h in Headers */,
@@ -593,6 +594,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B07011791F5EB47000784BDC /* UIView+SimpleAnimations.m in Sources */,
 				CB414F57F56D5A16E8DC369065CBA3BA /* NSBundle+PodResourceBundle.m in Sources */,
 				1E1A90E4AD812A22028B12444557AA16 /* RAECategories-dummy.m in Sources */,
 				CB98602236C6F263D416E57709D3C83F /* SavedOverlayView.m in Sources */,
