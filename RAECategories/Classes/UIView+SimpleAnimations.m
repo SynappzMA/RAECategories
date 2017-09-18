@@ -44,7 +44,7 @@
 
 #pragma mark - Pop/Recede
 
--(void)pop:(void(^)())completion {
+-(void)pop:(void(^)(void))completion {
     
     [UIView animateWithDuration:0.15  animations:^{
         self.transform = CGAffineTransformMakeScale(1.1, 1.1);
@@ -57,7 +57,7 @@
     }];
 }
 
--(void)popWithScale:(CGFloat)scale completion:(void(^)())completion {
+-(void)popWithScale:(CGFloat)scale completion:(void(^)(void))completion {
     [UIView animateWithDuration:0.15 animations:^{
         self.transform = CGAffineTransformMakeScale(scale, scale);
     } completion:^(BOOL finished) {
@@ -69,7 +69,7 @@
     }];
 }
 
--(void)popWithScale:(CGFloat)scale andDuration:(CGFloat)duration completion:(void(^)())completion {
+-(void)popWithScale:(CGFloat)scale andDuration:(CGFloat)duration completion:(void(^)(void))completion {
     [UIView animateWithDuration:duration animations:^{
         self.transform = CGAffineTransformMakeScale(scale, scale);
     } completion:^(BOOL finished) {
@@ -81,7 +81,7 @@
     }];
 }
 
--(void)recede:(void(^)())completion {
+-(void)recede:(void(^)(void))completion {
     
     [UIView animateWithDuration:0.15  animations:^{
         self.transform = CGAffineTransformMakeScale(0.9, 0.9);
@@ -94,7 +94,7 @@
     }];
 }
 
--(void)recedeWithScale:(CGFloat)scale completion:(void(^)())completion {
+-(void)recedeWithScale:(CGFloat)scale completion:(void(^)(void))completion {
     [UIView animateWithDuration:0.15 animations:^{
         self.transform = CGAffineTransformMakeScale(scale, scale);
     } completion:^(BOOL finished) {
@@ -106,7 +106,7 @@
     }];
 }
 
--(void)recedeWithScale:(CGFloat)scale andDuration:(CGFloat)duration completion:(void(^)())completion {
+-(void)recedeWithScale:(CGFloat)scale andDuration:(CGFloat)duration completion:(void(^)(void))completion {
     [UIView animateWithDuration:duration animations:^{
         self.transform = CGAffineTransformMakeScale(scale, scale);
     } completion:^(BOOL finished) {

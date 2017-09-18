@@ -19,7 +19,7 @@
  @param completion block to be called when the animation finished.
  */
 
--(void)showChangedSavedOverlay:(void (^)())completion withMessage:(NSString *)message color:(UIColor*)color
+-(void)showChangedSavedOverlay:(void (^)(void))completion withMessage:(NSString *)message color:(UIColor*)color
 {
     //[[UIApplication sharedApplication] beginIgnoringInteractionEvents];
     if(!message.length || color == nil) {
@@ -72,7 +72,7 @@
     
 }
 
--(void)showChangedSavedOverlay:(void (^)())completion color:(UIColor*)color
+-(void)showChangedSavedOverlay:(void (^)(void))completion color:(UIColor*)color
 {
     [self showChangedSavedOverlay:completion withMessage:nil color:color];
 }

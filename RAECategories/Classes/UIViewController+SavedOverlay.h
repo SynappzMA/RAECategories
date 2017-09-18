@@ -10,7 +10,7 @@
 
 @interface UIViewController (SavedOverlay)
 
--(void)showChangedSavedOverlay:(void (^)())completion color:(UIColor*)color;
--(void)showChangedSavedOverlay:(void (^)())completion withMessage:(NSString *)message color:(UIColor*)color;
+-(void)showChangedSavedOverlay:(void (^)(void))completion color:(UIColor*)color;
+-(void)showChangedSavedOverlay:(void (^)(void))completion withMessage:(NSString *)message color:(UIColor*)color;
 
 @end

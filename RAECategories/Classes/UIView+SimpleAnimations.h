@@ -17,10 +17,10 @@
 -(void)hideWithDuration:(CGFloat)duration completion:(void (^)(BOOL finished))completion;
 
 //Pop/recede
--(void)pop:(void(^)())completion;
--(void)popWithScale:(CGFloat)scale completion:(void(^)())completion;
--(void)popWithScale:(CGFloat)scale andDuration:(CGFloat)duration completion:(void(^)())completion;
--(void)recede:(void(^)())completion;
--(void)recedeWithScale:(CGFloat)scale completion:(void(^)())completion;
--(void)recedeWithScale:(CGFloat)scale andDuration:(CGFloat)duration completion:(void(^)())completion;
+-(void)pop:(void(^)(void))completion;
+-(void)popWithScale:(CGFloat)scale completion:(void(^)(void))completion;
+-(void)popWithScale:(CGFloat)scale andDuration:(CGFloat)duration completion:(void(^)(void))completion;
+-(void)recede:(void(^)(void))completion;
+-(void)recedeWithScale:(CGFloat)scale completion:(void(^)(void))completion;
+-(void)recedeWithScale:(CGFloat)scale andDuration:(CGFloat)duration completion:(void(^)(void))completion;
 @end
