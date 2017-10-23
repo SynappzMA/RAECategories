@@ -10,7 +10,7 @@
 #define RAECategories_h
 
 #import "NSBundle+PodResourceBundle.h"
-#import "UIViewController+SavedOverlay.h"
 #import "UIView+SimpleAnimations.h"
+#import "UIAlertController+Fast.h"
 
 #endif /* RAECategories_h */

@@ -34,9 +34,6 @@
 
 -(IBAction)doIt:(id)sender
 {
-    [self showChangedSavedOverlay:^() {
-        NSLog(@"Hi, I completed");
-    }withMessage:@"Changes saved!" color:[UIColor blueColor]];
 }
 
 -(IBAction)doOtherThing:(id)sender
