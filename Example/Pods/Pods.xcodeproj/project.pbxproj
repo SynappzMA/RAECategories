@@ -25,6 +25,8 @@
 		7EF5DF689B3F360EBD0DC2226C442FCD /* Pods-RAECategories_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CE30BD781E871A8A594A4A83A1842C7D /* Pods-RAECategories_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8B43F790BAABD1A519FAC571C335D4DB /* BDGScreenshot.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B098679950F55C04943BB71D707F6E4 /* BDGScreenshot.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		991FE2D028B44799C9C40C0197669EDE /* NSBundle+PodResourceBundle.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F5DA8F15BBE8E7A0A77D4FC0E4401BD /* NSBundle+PodResourceBundle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B0E2A3CC1F9F153800601B10 /* NSDateFormatter+ClockType.h in Headers */ = {isa = PBXBuildFile; fileRef = B0E2A3CA1F9F153800601B10 /* NSDateFormatter+ClockType.h */; };
+		B0E2A3CD1F9F153800601B10 /* NSDateFormatter+ClockType.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E2A3CB1F9F153800601B10 /* NSDateFormatter+ClockType.m */; };
 		B573BBF5C61F7519C8FBCD17CDF990D7 /* RAECategories-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 51E293A69D6FCF74B0B5A5F83054379A /* RAECategories-dummy.m */; };
 		BB0C61A3ED7003FE6FD724EF44FC718E /* Pods-RAECategories_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F484459C4D542EC29DE7CD44E9A5C2C /* Pods-RAECategories_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BB19AE62F4BBE03F027C6C55D9F4A8BF /* NSBundle+PodResourceBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = A41E20C666F8DF0740D0352D26D638CD /* NSBundle+PodResourceBundle.m */; };
@@ -101,6 +103,8 @@
 		A24E78F1437D6268B7353D9B993D93EA /* BDGScreenshot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BDGScreenshot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A41E20C666F8DF0740D0352D26D638CD /* NSBundle+PodResourceBundle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSBundle+PodResourceBundle.m"; path = "RAECategories/Classes/NSBundle+PodResourceBundle.m"; sourceTree = "<group>"; };
 		AC96CCA6DFF02F26DAB296607DEEA34F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0E2A3CA1F9F153800601B10 /* NSDateFormatter+ClockType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NSDateFormatter+ClockType.h"; path = "RAECategories/Classes/NSDateFormatter+ClockType.h"; sourceTree = "<group>"; };
+		B0E2A3CB1F9F153800601B10 /* NSDateFormatter+ClockType.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "NSDateFormatter+ClockType.m"; path = "RAECategories/Classes/NSDateFormatter+ClockType.m"; sourceTree = "<group>"; };
 		B2492135B69625EBBAA5F1F9F11C98E5 /* BDGScreenshot-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BDGScreenshot-dummy.m"; sourceTree = "<group>"; };
 		B98D388ADD1DAF937689E452E2D05DC3 /* ResourceBundle-RAECategories-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-RAECategories-Info.plist"; sourceTree = "<group>"; };
 		BB937B23EA1CD72DF0DB9CD74F84A66C /* RAECategories.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RAECategories.h; path = RAECategories/Classes/RAECategories.h; sourceTree = "<group>"; };
@@ -297,6 +301,8 @@
 				28FCA1DB900A2C863DD2BCE769873329 /* UIAlertController+Fast.m */,
 				0D372107006C9C7A08D4524AB08B2FA1 /* UIView+SimpleAnimations.h */,
 				93AC7B4EB288CCE7D0D94A9AAB64B4C3 /* UIView+SimpleAnimations.m */,
+				B0E2A3CA1F9F153800601B10 /* NSDateFormatter+ClockType.h */,
+				B0E2A3CB1F9F153800601B10 /* NSDateFormatter+ClockType.m */,
 				A888A0012CCEEFA3DE67A64ED2F8A0FB /* Support Files */,
 			);
 			name = RAECategories;
@@ -337,6 +343,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0E2A3CC1F9F153800601B10 /* NSDateFormatter+ClockType.h in Headers */,
 				991FE2D028B44799C9C40C0197669EDE /* NSBundle+PodResourceBundle.h in Headers */,
 				4A70ACE90BDD2B1FB9471B9A9B8B5D18 /* RAECategories-umbrella.h in Headers */,
 				01D7765D16616B16C190318309B41763 /* RAECategories.h in Headers */,
@@ -533,6 +540,7 @@
 			files = (
 				BB19AE62F4BBE03F027C6C55D9F4A8BF /* NSBundle+PodResourceBundle.m in Sources */,
 				B573BBF5C61F7519C8FBCD17CDF990D7 /* RAECategories-dummy.m in Sources */,
+				B0E2A3CD1F9F153800601B10 /* NSDateFormatter+ClockType.m in Sources */,
 				6D65738E8266E938437F16E7AA444A37 /* UIAlertController+Fast.m in Sources */,
 				E4A12A4F47CD7F47BAB4ACE4E47DD02F /* UIView+SimpleAnimations.m in Sources */,
 			);
